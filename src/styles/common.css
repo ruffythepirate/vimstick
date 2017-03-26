@@ -18,7 +18,8 @@ textarea#setter {
 	cursor: pointer;
 	background-color: lightgreen;
 	width: 3px;
-	height: 18px;
+	height: 100%;
+  left: 0px;
 	background-color: lightgreen;
 	animation: PulseAttention 2s cubic-bezier(.215, .61, .355, 1) forwards infinite;
 }
@@ -29,10 +30,18 @@ textarea#setter {
 	}
 }
 
+.caret-container {
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  background-color: transparent;
+}
+
 .command-caret {
 	position: absolute;
-	width: 12px;
-	height: 12px;
+	width: 100%;
+  height: 60%;
+  bottom: 0px;
 	background-color: lightgreen;
 	color: lightgreen;
 	opacity: 0.8;

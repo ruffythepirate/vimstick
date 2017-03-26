@@ -25,7 +25,7 @@ const currentState = {
 
 function updateCaret() {
     caret.style.left = currentState.column *10 + 'px';
-    caret.style.top = currentState.row *18 + 'px';
+    caret.style.top = 8 + currentState.row *18 + 'px';
 }
 
 function inputInputHandler() {
@@ -48,6 +48,11 @@ function inputInputHandler() {
             currentState.row = Math.max(currentState.row -1, 0);
         } else if(keycode == 40) {
             currentState.row = currentState.row+1; 
+        } else if (keycode == 13) {
+            currentState.row++;
+            currentState.column = 0;
+        } else {
+            currentState.column = currentState.column+1; 
         }
         updateCaret();
 
