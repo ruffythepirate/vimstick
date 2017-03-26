@@ -3,6 +3,9 @@ body {
 	margin: 0px;
 	padding: 0px;
 	height: 99&#37;;
+
+	background-color: black;
+	color: white;
 }
 
 textarea#setter { /* explorer doesn't support [att=val] selector :( */
@@ -12,10 +15,10 @@ position: absolute;
 
 .cursor {
 	font-size: 12px;
-	background-color: red;
-	color: red;
+	background-color: lightgreen;
+	color: lightgreen;
 	position: relative;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 #terminal {
