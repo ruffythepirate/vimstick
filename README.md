@@ -6,6 +6,11 @@ Vimstick is an attempt to create a lightweight, easy to use, stickies program th
 
 The project uses NW, and hopes to be platform indepent in the long run.
 
+# Running
+
+1. Install NW: https://nwjs.io/
+2. Stand in the root folder of this project and run `nw .`
+
 # Feature Ambition:
 
 1. A project planner that sorts information in a hierarchy.
@@ -24,3 +29,9 @@ Navigation in the project is done in a VIM inspired way:
 5. :w saves
 5. :q quits
 5. :wq saves and quits
+
+# Troubleshooting
+
+## Running in Fedora
+
+I had problems starting nw in fedora 25, it complained that libXss.so.1 could not be found. This was resolved by running `sudo dnf install libXScrnSaver`
