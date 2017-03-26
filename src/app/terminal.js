@@ -32,6 +32,6 @@ function moveIt(count, e){
 
 }
 
-function alert(txt){ // for debugging
-    console.log(txt); // works only with firebug
-}
+            function alert(txt){ // for debugging
+            console.log(txt); // works only with firebug
+        }

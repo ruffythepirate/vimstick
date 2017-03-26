@@ -22,6 +22,7 @@ The project uses NW, and hopes to be platform indepent in the long run.
 
 Navigation in the project is done in a VIM inspired way:
 1. jhkl to navigate through the nodes.
+1. o to expand or close a node
 2. / to search through the content.
 3. i to go into insert node where one can edit the current node.
 4. esc to go back to navigation mode.

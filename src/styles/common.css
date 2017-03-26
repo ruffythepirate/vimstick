@@ -8,17 +8,35 @@ body {
 	color: white;
 }
 
-textarea#setter { /* explorer doesn't support [att=val] selector :( */
-left: -1000px;
-position: absolute;
+textarea#setter { 
+	left: -1000px;
+	position: absolute;
 }
 
-.cursor {
-	font-size: 12px;
+.input-caret {
+	position: absolute;
+	cursor: pointer;
+	background-color: lightgreen;
+	width: 3px;
+	height: 18px;
+	background-color: lightgreen;
+	animation: PulseAttention 2s cubic-bezier(.215, .61, .355, 1) forwards infinite;
+}
+
+@keyframes PulseAttention {
+	50% {
+		background-color: transparent;
+	}
+}
+
+.command-caret {
+	position: absolute;
+	width: 12px;
+	height: 12px;
 	background-color: lightgreen;
 	color: lightgreen;
-	position: relative;
 	opacity: 0.8;
+	animation: PulseAttention 2s cubic-bezier(.215, .61, .355, 1) forwards infinite;
 }
 
 #terminal {
