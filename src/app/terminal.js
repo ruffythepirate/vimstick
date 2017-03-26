@@ -16,6 +16,18 @@ function nl2br(txt){ /* helper, textarea return \n not <br /> */
 
 window.inputHandler = inputInputHandler();
 
+const currentState = {
+    row: 0,
+    column: 0
+}
+
+    const caret = $('cursor');
+
+function updateCaret() {
+    caret.style.left = currentState.column *10 + 'px';
+    caret.style.top = currentState.row *18 + 'px';
+}
+
 function inputInputHandler() {
     const self = {};
     self.writeIt = function(from, e) {
@@ -28,11 +40,16 @@ function inputInputHandler() {
     self.moveIt = function(from, e) {
         e = e || window.event; 
         var keycode = e.keyCode || e.which;
-        if(keycode == 37 && parseInt(cursor.style.left) >= (0-((count-1)*10))){ 
-            cursor.style.left = parseInt(cursor.style.left) - 10 + "px"; 
-        } else if(keycode == 39 && (parseInt(cursor.style.left) + 10) <= 0){ 
-            cursor.style.left = parseInt(cursor.style.left) + 10 + "px";
+        if(keycode == 37){ 
+            currentState.column = Math.max(currentState.column -1, 0);
+        } else if(keycode == 39) { 
+            currentState.column = currentState.column+1; 
+        } else if(keycode == 38 ) {
+            currentState.row = Math.max(currentState.row -1, 0);
+        } else if(keycode == 40) {
+            currentState.row = currentState.row+1; 
         }
+        updateCaret();
 
     }
 
