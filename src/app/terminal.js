@@ -28,6 +28,18 @@ function updateCaret() {
     caret.style.top = 8 + currentState.row *18 + 'px';
 }
 
+const commandImplementations = [
+]
+
+function handleCommand(command) {
+    const cmdImpl =commandImplementations[command];
+    if( cmdImpl != null) {
+        cmdImpl.execute(command);
+    } else {
+        console.log(`Could not find any implementation for command '${command.id}'`);
+    }
+}
+
 function inputInputHandler() {
     const self = {};
     self.writeIt = function(from, e) {

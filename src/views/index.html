@@ -5,8 +5,8 @@
 </head>
 <body>
 	<div id="terminal" onclick="$('setter').focus();">
-		<textarea type="text" id="setter" onkeydown="window.inputHandler.writeIt(this, event);window.inputHandler.moveIt(this.value.length, event)" onkeyup="window.inputHandler.writeIt(this, event)" onkeypress="window.inputHandler.writeIt(this, event);"></textarea>
-		<div id="getter">
+		<textarea type="text" id="setter"></textarea>
+		<div id="getter"  onkeydown="window.inputHandler.writeIt(this, event);window.inputHandler.moveIt(this.value.length, event)" onkeyup="window.inputHandler.writeIt(this, event)" onkeypress="window.inputHandler.writeIt(this, event);">
 			<span id="writer"></span><span id="cursor" class="caret-container"><span class="command-caret" id="cursor"></span></span>
 		</div>
 	</div>
