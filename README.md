@@ -11,6 +11,10 @@ The project uses NW, and hopes to be platform indepent in the long run.
 1. Install the node packages by running `npm install` in the root folder.
 2. run `node_modules/nw/bin/nw .` and the application is running.
 
+# Running Tests
+
+Execute `mocha . --recursive` in the specs folder.
+
 # Feature Ambition:
 
 1. A project planner that sorts information in a hierarchy.
