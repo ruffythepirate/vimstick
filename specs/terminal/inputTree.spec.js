@@ -1,7 +1,5 @@
 const cut = require('../../src/app/input/inputTree.js');
-
 const chai = require('chai');
-
 const expect = chai.expect;
 
 describe('inputTree.inputKey', function() {
@@ -24,10 +22,6 @@ describe('inputTree.inputKey', function() {
 
 
   it('can map two keystrokes to two keys', function() {
-    hey
-  });
-
-  it('hello can map two keystrokes to two keys', function() {
   });
 
 });
