@@ -15,7 +15,7 @@ gulp.task('eslint', function () {
   .src(appFiles)
   .pipe(eslint())
   .pipe(eslint.format())
-  .pipe(eslint.failAfterError())
+  .pipe(eslint.failOnError())
 })
 
 
