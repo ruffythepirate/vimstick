@@ -4,6 +4,7 @@
   "main": "src/views/index.html",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
     "gulp-mocha": "^4.2.0",
     "lodash": "^4.17.4",
     "nw": "^0.18.2",

@@ -1,2 +1,1 @@
-const dom = require('../dom');
 

@@ -3,11 +3,21 @@ var
 // modules
   gulp = require('gulp'),
   mocha = require('gulp-mocha'),
+  eslint = require('gulp-eslint'),
   _ = require('lodash');
 
 const testFiles = 'specs/**/*.spec.js';
 const appFiles = 'src/app/**/*.js';
 const allJsFiles = [testFiles, appFiles]
+
+gulp.task('eslint', function () {
+  return gulp
+  .src(appFiles)
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError())
+})
+
 
 gulp.task('test', (callback) => {
   freshFiles();
