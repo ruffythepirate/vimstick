@@ -15,7 +15,7 @@ describe('inputTree.inputKey', function() {
   it('maps a keystroke to one key', function() {
     cut.initializeTree([{id:'custom', key: 'a'}]);
 
-    const response = cut.inputKey({ key: 'a' });
+    const response = cut.inputKey('a');
 
     expect(response.id).to.be.equal('custom');
   });
