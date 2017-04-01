@@ -6,6 +6,7 @@ module.exports = function() {
   
   const rootNode = {};
 
+
   var defaultCommand = undefined;
 
   function initializeTree(keyMap, dCmd) {

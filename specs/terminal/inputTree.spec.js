@@ -24,6 +24,7 @@ describe('inputTree.inputKey', function() {
 
 
   it('can map two keystrokes to two keys', function() {
+    hey
   });
 
   it('hello can map two keystrokes to two keys', function() {

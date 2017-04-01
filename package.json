@@ -5,7 +5,6 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-mocha": "^4.2.0",
-    "gulp-watch": "^4.3.11",
     "lodash": "^4.17.4",
     "nw": "^0.18.2",
     "nw-builder": "^3.1.2"

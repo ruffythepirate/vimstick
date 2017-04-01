@@ -2,8 +2,10 @@ function $(elid){ /* shortcut for d.gEBI */
     return document.getElementById(elid);
 }
 
+var hello;
 var cursor; /* global variable */
 window.onload = init;
+
 
 function init(){
     cursor = $("cursor"); /* defining the global var */
@@ -20,6 +22,9 @@ const currentState = {
     row: 0,
     column: 0
 }
+
+
+
 
     const caret = $('cursor');
 
